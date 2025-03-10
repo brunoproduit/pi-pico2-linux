@@ -34,3 +34,7 @@ BR2_LINUX_KERNEL_CUSTOM_DTS_PATH="$(BR2_EXTERNAL)/board/raspberrypi/raspberrypi-
 
 # Host tools
 BR2_PACKAGE_HOST_GENIMAGE=y
+
+# Bruno
+BR2_TOOLCHAIN_GCC_OPTIMIZE_SIZE=y
+BR2_PACKAGE_BUSYBOX_CONFIG="$(BR2_EXTERNAL)/configs/busybox.config"
